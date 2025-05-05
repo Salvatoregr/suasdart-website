@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Favicon personalizzata -->
     <link rel="icon" type="image/png" href="logo.png" />
   
-    <link rel="stylesheet" href="/suasdart-website/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -33,7 +32,7 @@
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="/suasdart-website/index.html" id="navbar__logo">
+        <a href="index.html" id="navbar__logo">
           <img src="images/logo.png" alt="Logo DART" style="height: 40px; vertical-align: middle; margin-right: 8px;">
           DART
       </a>
@@ -43,15 +42,15 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="/suasdart-website/index.html" class="navbar__links">Home</a>
+            <a href="index.html" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/suasdart-website/team.html" class="navbar__links">Team</a>
+            <a href="team.html" class="navbar__links">Team</a>
           </li>
           <li class="navbar__item">
-            <a href="/suasdart-website/media.html" class="navbar__links">Media</a>
+            <a href="media.html" class="navbar__links">Media</a>
           </li>
-          <li class="navbar__btn"><a href="/suasdart-website/contacts.html" class="button">Contact Us</a></li>
+          <li class="navbar__btn"><a href="contacts.html" class="button">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -84,51 +83,49 @@
         <div class="services__card">
           <h2>Drone Media</h2>
           <p>Watch photos and videos of our drone</p>
-          <a href="/suasdart-website/media.html">
+          <a href="media.html">
             <button>Check it!</button>
           </a>
         </div>
         <div class="services__card">
           <h2>Meet the Team</h2>
           <p>See the team members</p>
-          <a href="/suasdart-website/team.html">
+          <a href="team.html">
             <button>Check it!</button>
           </a>
         </div>
       </div>
     </div>
 
-
-  <!-- SPONSOR SECTION -->
-  <div class="sponsors">
-    <h1>Our Sponsors</h1>
-    <div class="sponsor-carousel">
-      <div class="sponsor-track">
-        <img src="images/sponsor1.png" alt="Sponsor 1" />
-        <img src="images/sponsor2.png" alt="Sponsor 2" />
+    <!-- SPONSOR SECTION -->
+    <div class="sponsors">
+      <h1>Our Sponsors</h1>
+      <div class="sponsor-carousel">
+        <div class="sponsor-track">
+          <img src="images/sponsor1.png" alt="Sponsor 1" />
+          <img src="images/sponsor2.png" alt="Sponsor 2" />
+        </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="floating-audio-player">
-    <audio id="audioPlayer" src="song.mp3" preload="auto"></audio>
-    <button id="playPauseBtn" class="play-pause-btn">
-      <i class="fas fa-play"></i>  <!-- Icona Play -->
-    </button>
-  </div>
-
-  <footer class="footer">
-    <div class="footer__container">
-      <p>Website created by Salvatore Granata for 2025 SUAS Competition</p>
-      <div class="footer__icons">
-        <a href="mailto:salvatoregr1999@hotmail.com" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
+    <div class="floating-audio-player">
+      <audio id="audioPlayer" src="song.mp3" preload="auto"></audio>
+      <button id="playPauseBtn" class="play-pause-btn">
+        <i class="fas fa-play"></i>  <!-- Icona Play -->
+      </button>
     </div>
-  </footer>
 
-  <script src="app.js"></script>
+    <footer class="footer">
+      <div class="footer__container">
+        <p>Website created by Salvatore Granata for 2025 SUAS Competition</p>
+        <div class="footer__icons">
+          <a href="mailto:salvatoregr1999@hotmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
-
