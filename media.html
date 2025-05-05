@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon personalizzata -->
+    <link rel="icon" type="image/png" href="logo.png" />
+    
+    <!-- Collegamento al file CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <!-- Titolo scorrevole -->
+    <script>
+      let titleText = "-- DART SUAS 25 -- ";
+      function scrollTitle() {
+        titleText = titleText.substring(1) + titleText.charAt(0);
+        document.title = titleText;
+      }
+      setInterval(scrollTitle, 500);
+    </script>
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <img src="images/logo.png" alt="Logo DART" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+          DART
+      </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/team.html" class="navbar__links">Team</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/media.html" class="navbar__links">Media</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/contacts.html" class="button">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <!-- Galleria -->
+  <section class="gallery">
+    <h1>Media Gallery</h1>
+    <p> Here you can find photos and videos taken during the building of the drone for the competition, tests and software sections </p>
+    <div class="gallery__container">
+      <a href="#img1"><img src="images/photo1.jpg" alt="Drone Photo 1" /></a>
+      <a href="#img2"><img src="images/photo2.jpg" alt="Drone Photo 2" /></a>
+      <a href="#img3"><img src="images/photo3.jpg" alt="Drone Photo 3" /></a>
+      <a href="#img4"><img src="images/photo4.jpg" alt="Drone Photo 4" /></a>
+      <a href="#img5"><img src="images/photo5.jpg" alt="Drone Photo 5" /></a>
+      <a href="#img5"><img src="images/photo6.jpg" alt="Drone Photo 6" /></a>
+      <a href="#img5"><img src="images/photo5.jpg" alt="Drone Photo 7" /></a>
+      <a href="#img5"><img src="images/photo6.jpg" alt="Drone Photo 8" /></a>
+    </div>
+  </section>
+
+    <!-- Lightbox -->
+    <div id="img1" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo1.jpg" alt="Large Drone 1">
+      </div>
+      <div id="img2" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo2.jpg" alt="Large Drone 2">
+      </div>
+      <div id="img3" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo3.jpg" alt="Large Drone 3">
+      </div>
+      <div id="img4" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo4.jpg" alt="Large Drone 4">
+      </div>
+      <div id="img5" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo5.jpg" alt="Large Drone 5">
+      </div>
+      <div id="img6" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo6.jpg" alt="Large Drone 6">
+      </div>
+      <div id="img7" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo6.jpg" alt="Large Drone 7">
+      </div>
+      <div id="img8" class="lightbox" onclick="location.hash='';">
+        <img src="images/photo6.jpg" alt="Large Drone 8">
+      </div>
+
+    <script src="app.js"></script>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p>Website created by Salvatore Granata for 2025 SUAS Competition</p>
+        <div class="footer__icons">
+          <a href="mailto:salvatoregr1999@hotmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon personalizzata -->
+    <link rel="icon" type="image/png" href="logo.png" />
+  
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  
+    <!-- Titolo scorrevole -->
+    <script>
+      let titleText = "-- DART SUAS 25 -- ";
+      function scrollTitle() {
+        titleText = titleText.substring(1) + titleText.charAt(0);
+        document.title = titleText;
+      }
+      setInterval(scrollTitle, 500);
+    </script>
+
+    <!-- Icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  
+  
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <img src="images/logo.png" alt="Logo DART" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+          DART
+      </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/team.html" class="navbar__links">Team</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/media.html" class="navbar__links">Media</a>
+          </li>
+          <li class="navbar__btn"><a href="/contacts.html" class="button">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Drone Academy Research Team</h1>
+          <h2>for SUAS 25 Competition</h2>
+          <p>do we have a slogan?</p>
+          <button class="main__btn"><a href="#">More Info</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--container">
+            <button class="arrow left" id="prev">&#10094;</button>
+            
+            <img id="main__img" src="images/dart1.jpg" alt="Slideshow" />
+          
+            <button class="arrow right" id="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      <h1>See how we got ready for the SUAS Competition</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Drone Media</h2>
+          <p>Watch photos and videos of our drone</p>
+          <a href="media.html">
+            <button>Check it!</button>
+          </a>
+        </div>
+        <div class="services__card">
+          <h2>Meet the Team</h2>
+          <p>See the team members</p>
+          <a href="team.html">
+            <button>Check it!</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- SPONSOR SECTION -->
+  <div class="sponsors">
+    <h1>Our Sponsors</h1>
+    <div class="sponsor-carousel">
+      <div class="sponsor-track">
+        <img src="images/sponsor1.png" alt="Sponsor 1" />
+        <img src="images/sponsor2.png" alt="Sponsor 2" />
+      </div>
+    </div>
+  </div>
+
+
+  <div class="floating-audio-player">
+    <audio id="audioPlayer" src="song.mp3" preload="auto"></audio>
+    <button id="playPauseBtn" class="play-pause-btn">
+      <i class="fas fa-play"></i>  <!-- Icona Play -->
+    </button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p>Website created by Salvatore Granata for 2025 SUAS Competition</p>
+      <div class="footer__icons">
+        <a href="mailto:salvatoregr1999@hotmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</html>
+
