@@ -6,7 +6,14 @@
 
     <link rel="icon" type="image/png" href="logo.png" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <title>Contact Us</title>
 
@@ -18,32 +25,35 @@
       }
       setInterval(scrollTitle, 500);
     </script>
-
   </head>
 
   <body>
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="/suasdart-website/" id="navbar__logo">
-          <img src="images/logo.png" alt="Logo DART" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+        <a href="index.html" id="navbar__logo">
+          <img
+            src="images/logo.png"
+            alt="Logo DART"
+            style="height: 40px; vertical-align: middle; margin-right: 8px"
+          />
           DART
-      </a>
+        </a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="/suasdart-website/index.html" class="navbar__links">Home</a>
+            <a href="index.html" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/suasdart-website/team.html" class="navbar__links">Team</a>
+            <a href="team.html" class="navbar__links">Team</a>
           </li>
           <li class="navbar__item">
-            <a href="/suasdart-website/media.html" class="navbar__links">Media</a>
+            <a href="media.html" class="navbar__links">Media</a>
           </li>
           <li class="navbar__btn">
-            <a href="/suasdart-website/contacts.html" class="button">Contact Us</a>
+            <a href="contacts.html" class="button">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -51,20 +61,41 @@
 
     <section class="contact-section">
       <h1>Contact Us</h1>
-      <p>Let’s keep in touch! Write us for any information, collaboration or sponsorship opportunity.</p>
+      <p>
+        Let’s keep in touch! Write us for any information, collaboration or
+        sponsorship opportunity.
+      </p>
 
       <div class="contact-info">
-        <p><strong>📍 Location:</strong> University of Naples "Federico II" & Air Force Academy</p>
+        <p>
+          <strong>📍 Location:</strong> University of Naples "Federico II" &
+          Air Force Academy
+        </p>
         <p><strong>📧 Email:</strong> salvatoregr1999@hotmail.com</p>
-        <a href="mailto:salvatoregr1999@hotmail.com" class="contact-button">Send Email</a>
+        <a href="mailto:salvatoregr1999@hotmail.com" class="contact-button"
+          >Send Email</a
+        >
       </div>
 
       <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9844146971523!2d14.185743190481812!3d40.82830599757257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0ecd1ecad31b%3A0xffea8ea4af0e4c2d!2sDIETI%20-%20Dipartimento%20di%20Ingegneria%20Elettrica%20e%20delle%20Tecnologie%20dell&#39;Informazione%20-%20Universit%C3%A0%20Degli%20Studi%20di%20Napoli%20Federico%20II!5e0!3m2!1sit!2sit!4v1746024008861!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9844146971523!2d14.185743190481812!3d40.82830599757257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0ecd1ecad31b%3A0xffea8ea4af0e4c2d!2sDIETI%20-%20Dipartimento%20di%20Ingegneria%20Elettrica%20e%20delle%20Tecnologie%20dell&#39;Informazione%20-%20Universit%C3%A0%20Degli%20Studi%20di%20Napoli%20Federico%20II!5e0!3m2!1sit!2sit!4v1746024008861!5m2!1sit!2sit"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
-    <script src="app.js"></script>
+    <div class="floating-audio-player">
+      <audio id="audioPlayer" src="song.mp3" preload="auto"></audio>
+      <button id="playPauseBtn" class="play-pause-btn">
+        <i class="fas fa-play"></i>
+      </button>
+    </div>
 
     <footer class="footer">
       <div class="footer__container">
@@ -76,6 +107,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
-  
 </html>
